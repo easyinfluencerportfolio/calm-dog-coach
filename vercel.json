@@ -1,8 +1,9 @@
 {
-  "rewrites": [
-    {
-      "source": "/((?!assets/|__viktor_meta\\.json).*)",
-      "destination": "/index.html"
-    }
-  ]
+    "buildCommand": "npx convex codegen --typecheck disable && npx convex deploy --cmd 'npm run build' --cmd-url-env-var-name VITE_CONVEX_URL",
+    "rewrites": [
+          {
+                  "source": "/((?!assets/|__viktor_meta\\.json).*)",
+                  "destination": "/index.html"
+          }
+    ]
 }
