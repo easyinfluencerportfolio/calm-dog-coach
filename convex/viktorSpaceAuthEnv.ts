@@ -18,9 +18,12 @@ export function configuredProductAuthEnabled(): boolean {
   if (configured && TRANSIENT_LEGACY_ACCESS_MODES.has(configured)) return true;
 
   if (!configured) {
-    throw new Error(
-      "Missing required Viktor Spaces env var: VIKTOR_SPACES_ACCESS_MODE",
-    );
+    // Standalone deployments (a member's own Vercel + Convex copy, made via
+    // the Deploy button) never set this Viktor Spaces platform variable.
+    // Treat that as "public": customers reach the Plan Room and Coach
+    // dashboard through their own private link, not a login, so there is
+    // no gate to enforce here.
+    return false;
   }
   throw new Error(`Invalid VIKTOR_SPACES_ACCESS_MODE: ${configured}`);
 }
