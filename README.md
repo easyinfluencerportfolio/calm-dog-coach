@@ -8,7 +8,7 @@ You are about to make your own copy of it. Nobody else's customers touch your co
 
 Click the button. It signs you in with GitHub, copies this app into your own account, creates your own database and puts it live.
 
-[![Deploy with Vercel](https://vercel.com/button)](DEPLOY_URL_PLACEHOLDER)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Feasyinfluencerportfolio%2Fcalm-dog-coach&project-name=calm-dog-coach&repository-name=calm-dog-coach&env=VITE_SUPPORT_EMAIL%2CGHL_WEBHOOK_SECRET&envDescription=Your+support+email+address+and+a+password+you+invent+for+the+GoHighLevel+webhook&products=%5B%7B%22type%22%3A+%22integration%22%2C+%22integrationSlug%22%3A+%22convex%22%2C+%22productSlug%22%3A+%22convex%22%2C+%22protocol%22%3A+%22storage%22%7D%5D)
 
 It takes about two minutes. When it finishes you get a web address ending in `.vercel.app`. That is your app URL, and you will paste it into GoHighLevel in a moment.
 
